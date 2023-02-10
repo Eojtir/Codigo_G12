@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+</head>
+
+<body>
+  <section><h2>Formulario</h2>
+  <form>
+    <p><input type="text" placeholder="Ingresa tu nombre" name="name" required/></p>
+    <P><input type="email" placeholder="ingresa tu correo" name="email" autocomplete="off" required/></P>
+    <P><input type="password" placeholder="Escribe una contraseña segura" name="password"  required/></P>
+    <P><input type="file" accept="image/*" name="file"></P>
+     <p><input type="number" placeholder="ingresa tu edad" name="edad" disabled></p>  <!--el contenido de esta caja no se envia al backend -->
+    <p><input type="date" name="date"/></p>
+    <p><input type="time" name="time"/></p>
+    <p><input type="datetime-local" name="datetime"/></p>
+    <p><input type="checkbox" name="condicion">Acepto los Terminos y condiciones</p>
+    <h2>Escoje una opcion</h2>
+    <p><input type="radio" name="option" value="op1" checked/>opcion1</p>
+    <p><input type="radio" name="option" value="op2"/>opcion2</p>
+    <p><input type="radio" name="option" value="op3"/>opcion3</p>
+
+    <button type="submit">Submit</button>
+  </form>
+</section>
+</body>
+
+</html>
