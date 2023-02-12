@@ -1,0 +1,112 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: rgb(13, 25, 43);
+  font-family: Outfit, sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color:hsl(216, 50%, 16%);
+  width: 300px;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.img01 {
+  width: 298px;
+  height: 298px;
+}
+
+.avatar {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.ft {
+  border-top: 1px solid rgb(47, 65, 91);
+}
+
+div h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+div h4 {
+  font-size: 18px;
+  font-weight: 300 !important;
+}
+
+.bl02 {
+  padding: 20px 0px;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 12px;
+  width: 300px;
+  height: 20px;
+  align-items: center;
+}
+
+.bl02 h4 {
+  color: rgb(0, 255, 247);
+  font-size: 14px;
+  width: 185px;
+  font-weight: 700 !important;
+}
+
+.bl02 h5 {
+  font-weight: 400 !important;
+}
+
+.img_02 {
+  width: 20px;
+  height: 20px;
+}
+
+.img_03 {
+  margin-top: 4px;
+  margin-right: 3px;
+}
+
+.color_gris {
+  color: rgb(139, 172, 218);
+}
+
+.ft {
+  padding: 10px 0px 0px;
+  display: inline-flex;
+  font-weight: 700;
+  font-size: 12px;
+  width: 320px;
+  height: 20px;
+  align-items: center;
+}
+
+.ft img {
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.ft b {
+  color: white;
+}
+
+h5 {
+  width: 70px;
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 10px;
+  font-weight: 400;
+}
