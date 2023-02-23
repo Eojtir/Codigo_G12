@@ -131,12 +131,14 @@ body {
 
 .challenges-container {
   position: relative;
+  /* border: 1px solid; */
+  height: 85vh;
 }
 
 .challenges-buttons {
   position: absolute;
   width: 100%;
-  top: 177px;
+  top: 350px;
   display: flex;
   justify-content: space-between;
 }
@@ -157,6 +159,7 @@ body {
 .challenges {
   gap: 40px;
   overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .challenges::-webkit-scrollbar {
@@ -175,4 +178,58 @@ body {
 .shadow {
   box-shadow: inset 0 -3em 3em rgba(214, 214, 214, 0.1),
     0 0 0 0 rgb(190, 190, 190), 0.3em 0.3em 1em rgba(176, 176, 176, 0.3);
+}
+.card img{
+  width: 100%;
+  height: 60%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  object-fit: cover;
+}
+.card img:hover{
+  box-shadow: inset 0 -3em 3em rgba(214, 214, 214, 0.1),
+  0 0 0 0 rgb(190, 190, 190), 0.3em 0.3em 1em rgba(176, 176, 176, 0.3);
+}
+
+.card-body{
+  text-align: center;
+}
+
+.card-body a{
+margin-top: 15px;
+display: block;
+background-color: #ff6464;
+border-radius: 20px;
+padding: 10px;
+color: #fff;
+text-decoration: none;
+text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+
+.inner-profile{
+flex-wrap: wrap;
+flex-direction: column-reverse;
+height: 100vh;
+gap: 20px;
+}
+.profile-text{
+  text-align: center;
+
+}
+.about{
+  margin: auto;
+  margin-top: 20px;
+}
+.custom-shape-divider-bottom-1677119079{
+  display: none;
+}
+
+.card{
+  width: 100%;
+  min-width: 100%;
+}
+
+
 }
