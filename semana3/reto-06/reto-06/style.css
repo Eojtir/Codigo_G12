@@ -1,0 +1,232 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+input{
+  border: 1px solid transparent;
+  outline: none;
+  text-align: end;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 23px;
+  font-family: 'Space Mono', monospace;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+
+}
+
+body{
+  background-color:hsl(185, 41%, 84%);
+}
+
+h1{
+  margin-bottom: 40px;
+}
+
+h2{
+  color: hsl(172, 67%, 45%);
+  font-size: 2em;
+  font-family: 'Space Mono', monospace;
+}
+
+h4{
+  color: hsl(189, 41%, 97%);
+  font-family: 'Space Mono', monospace;
+  font-size: 10px;
+}
+
+h5{
+  margin-bottom: 10px;
+}
+
+h6{
+  color: hsl(186, 14%, 43%);
+  font-family: 'Space Mono', monospace;
+}
+
+
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+.main h1{
+  white-space: pre-line;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  width: 120px;
+  height: 100px;
+  text-align: center;
+  font-size: 23px;
+  font-family: 'Space Mono', monospace;
+  color: hsl(186, 14%, 43%);
+  font-weight: 700;
+
+
+}
+
+.card {
+  display: flex;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 16px;
+  align-items: center;
+  width: 50%;
+  padding: 20px;
+  gap: 20px;
+  
+}
+
+.left{
+  width: 51%;
+}
+
+.content-left{
+   font-family: 'Space Mono', monospace;
+   color: hsl(184, 14%, 56%);
+   font-weight: 700;
+}
+
+.content-left input {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+
+
+.select-tip{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  /* border: 1px solid; */
+}
+
+.select-tip input{
+width: 100px;
+height: 40px;
+text-align: center;
+border: 1px solid transparent;
+outline: none;
+color: hsl(186, 14%, 43%) ;
+margin-bottom: 10px;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  background-color: hsl(183, 100%, 15%);
+  font-size: 23px;
+  font-family: 'Space Mono', monospace;
+  color: #fff;
+  text-align: center;
+
+
+}
+.content-left img {
+    position: relative;
+    top: -38px;
+    left: 10px;
+}
+
+.right{
+width: 50%;
+}
+
+.content-right{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 10px;
+  padding: 10px;
+  /* height: 500px; */
+
+}
+
+.content-right div{
+  display: flex;
+  align-items: center;
+  width: 45%;
+  height: 87px;
+  justify-content: flex-end;
+}
+
+.content-right div:nth-child(odd){
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+margin-left: 15px;
+}
+
+.content-right div:nth-child(4){
+  margin-bottom: 40px;
+}
+
+.content-right button {
+  display: flex;
+  width: 200%;
+  height: 36px;
+  background-color: hsl(172, 67%, 45%);
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: hsl(183, 100%, 15%);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+button:hover{
+  background-color: hsl(172, 67%, 45%);
+  cursor: pointer;
+}
+input:focus{
+  border: 1px solid hsl(172, 67%, 45%);
+  border-radius: 8px;
+}
+
+/* Telefonos */
+@media screen and (max-width: 375px) {
+.main{
+  height: auto;
+}
+
+
+.card{
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  width: 90%;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+h1{
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.left{
+  width: 95%;
+}
+
+
+.right{
+  width: 95%;
+}
+
+.select-tip button {
+
+width: 140px;
+}
+
+.select-tip input{
+width: 140px;
+}
+ 
+}
