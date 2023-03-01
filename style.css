@@ -71,6 +71,7 @@ body {
 .title {
   font-size: 44px;
   font-weight: bold;
+  animation: rotate-in-2-cw .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; 
 }
 
 .about {
@@ -98,6 +99,12 @@ body {
   width: 243px;
   height: 243px;
   object-fit: cover;
+  /* animation: rotate-in-2-cw .5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;  */
+}
+
+.img-profile:hover {
+  transform: rotate(2turn) scale(1.25);
+  transition:transform 2s;
 }
 
 .custom-shape-divider-bottom-1677119079 {
@@ -185,11 +192,9 @@ body {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
   object-fit: cover;
+ 
 }
-.card img:hover{
-  box-shadow: inset 0 -3em 3em rgba(214, 214, 214, 0.1),
-  0 0 0 0 rgb(190, 190, 190), 0.3em 0.3em 1em rgba(176, 176, 176, 0.3);
-}
+
 
 .card-body{
   text-align: center;
@@ -232,4 +237,30 @@ gap: 20px;
 }
 
 
+}
+
+
+ @-webkit-keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate-in-2-cw {
+  0% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    opacity: 1;
+  }
 }

@@ -1,3 +1,10 @@
+const jsConfetti = new JSConfetti();
+
+jsConfetti.addConfetti({
+  emojis: ["#", "$", "⭐️"],
+  confettiNumber: 100,
+});
+
 // Esta es formar en la que JS accede a los elementos
 
 // es el div donde estan todos nuestros cards

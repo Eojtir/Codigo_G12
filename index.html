@@ -2,134 +2,127 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
-        rel="stylesheet">
-    <title>mi portafolio</title>
-    <link rel="stylesheet" href="./style.css">
-    <script src="./index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+    rel="stylesheet">
+  <title>mi portafolio</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js" defer></script>
+  <script src="./index.js" defer></script>
 </head>
 
 <body>
-    <nav class="nav flex content-end">
-        <ul class="flex">
-            <li>
-                <a href="#">Works</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <main class="m-auto">
-        <section class="profile">
-          <div
-            class="inner-profile m-max-width flex items-center content-center m-auto"
-          >
-            <div class="profile-text"> 
-              <h1 class="title">Hi, I'm Ritjoe Mujica,</h1>
-              <h1 class="title">Software Developer</h1>
-              <p class="about">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
-                iure, tempore numquam porro labore reprehenderit, explicabo nisi
-                provident soluta exercitationem, at quibusdam consequuntur
-                reiciendis. Laboriosam ipsam doloremque aliquam odio eligendi?
-              </p>
-              <button class="resume">Download resume</button>
+  <nav class="nav flex content-end">
+    <ul class="flex">
+      <li>
+        <a href="#">Works</a>
+      </li>
+      <li>
+        <a href="#">Blog</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  <main class="m-auto">
+    <section class="profile">
+      <div class="inner-profile m-max-width flex items-center content-center m-auto">
+        <div class="profile-text">
+          <h1 class="title">Hi, I'm Ritjoe Mujica,</h1>
+          <h1 class="title">Software Developer</h1>
+          <p class="about">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            iure, tempore numquam porro labore reprehenderit, explicabo nisi
+            provident soluta exercitationem, at quibusdam consequuntur
+            reiciendis. Laboriosam ipsam doloremque aliquam odio eligendi?
+          </p>
+          <button class="resume">Download resume</button>
+        </div>
+        <div class="section-profile">
+          <img class="img-profile" src="./image/profile.jpg" alt="" />
+        </div>
+      </div>
+      <div class="custom-shape-divider-bottom-1677119079">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+            class="shape-fill"></path>
+        </svg>
+      </div>
+    </section>
+    <section class="works">
+      <div class="m-max-width m-auto pt-30">
+        <h2>Featured works</h2>
+        <div class="challenges-container flex items-center">
+          <div class="challenges flex pt-30">
+            <div class="card shadow">
+              <img src="./image/challenges/reto-01.png" alt="" />
+              <div class="card-body">
+                <a href="">Ver repositorio</a>
+                <h3>How did we do?</h3>
+                <p>Reto FrontEnd mentor BASIC</p>
+              </div>
             </div>
-            <div class="section-profile">
-              <img class="img-profile" src="./image/profile.jpg" alt="" />
+            <div class="card shadow">
+              <img src="./image/challenges/reto-02.png" alt="" />
+              <div class="card-body">
+                <a href="">Ver repositorio</a>
+                <h3>Challege QR</h3>
+                <p>Reto FrontEnd mentor BASIC</p>
+              </div>
             </div>
-          </div>
-          <div class="custom-shape-divider-bottom-1677119079">
-            <svg
-              data-name="Layer 1"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 1200 120"
-              preserveAspectRatio="none"
-            >
-              <path
-                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-                class="shape-fill"
-              ></path>
-            </svg>
-          </div>
-        </section>
-        <section class="works">
-          <div class="m-max-width m-auto pt-30">
-            <h2>Featured works</h2>
-            <div class="challenges-container flex items-center">
-              <div class="challenges flex pt-30">
-                <div class="card shadow">
-                  <img src="./image/challenges/reto-01.png" alt="" />
-                  <div class="card-body">
-                  <a href="">Ver repositorio</a>
-                  <h3>How did we do?</h3>
-                  <p>Reto FrontEnd mentor BASIC</p>
-                </div>
-                </div>
-                <div class="card shadow">
-                  <img src="./image/challenges/reto-02.png" alt="" />
-                  <div class="card-body">
-                  <a href="">Ver repositorio</a>
-                  <h3>Challege QR</h3>
-                  <p>Reto FrontEnd mentor BASIC</p>
-                </div>
-                </div>
-                <div class="card shadow">
-                  <img src="./image/challenges/reto-03.png" alt="" />
-                  <div class="card-body">
-                  <a href="">Ver repositorio</a>
-                  <h3>Cards </h3>
-                  <p>Reto FrontEnd mentor BASIC</p>
-                </div>
-                </div>
-                <div class="card shadow">
-                  <img src="./image/challenges/reto-04.png" alt="" />
-                  <div class="card-body">
-                  <a href="">Ver repositorio</a>
-                  <h3>Github search</h3>
-                  <p>Reto FrontEnd mentor BASIC</p>
-                </div>
-                </div>
-                <div class="card shadow">
-                  <img src="./image/challenges/reto-05.png" alt="" />
-                  <div class="card-body">
-                  <a href="">Ver repositorio</a>
-                  <h3>landing page</h3>
-                  <p>Reto FrontEnd mentor BASIC</p>
-                </div>
-                </div>
-                <div class="card shadow">
-                  <img src="./image/challenges/reto-06.png" alt="" />
-                  <div class="card-body">
-                  <a href="">Ver repositorio</a>
-                  <h3>Calculator tips</h3>
-                  <p>Reto FrontEnd mentor JUNIOR</p>
-                </div>
-                </div>
+            <div class="card shadow">
+              <img src="./image/challenges/reto-03.png" alt="" />
+              <div class="card-body">
+                <a href="">Ver repositorio</a>
+                <h3>Cards </h3>
+                <p>Reto FrontEnd mentor BASIC</p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="./image/challenges/reto-04.png" alt="" />
+              <div class="card-body">
+                <a href="">Ver repositorio</a>
+                <h3>Github search</h3>
+                <p>Reto FrontEnd mentor BASIC</p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="./image/challenges/reto-05.png" alt="" />
+              <div class="card-body">
+                <a href="">Ver repositorio</a>
+                <h3>landing page</h3>
+                <p>Reto FrontEnd mentor BASIC</p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <img src="./image/challenges/reto-06.png" alt="" />
+              <div class="card-body">
+                <a href="">Ver repositorio</a>
+                <h3>Calculator tips</h3>
+                <p>Reto FrontEnd mentor JUNIOR</p>
+              </div>
+            </div>
 
-              </div>
-              <div class="challenges-buttons">
-                <button class="btn-back">
-                  <img width="18" src="./image/back.png" alt="" />
-                </button>
-                <button class="btn-next">
-                  <img width="18" src="./image/next.png" alt="" />
-                </button>
-              </div>
-            </div>
           </div>
-        </section>
-      </main>
+          <div class="challenges-buttons">
+            <button class="btn-back">
+              <img width="18" src="./image/back.png" alt="" />
+            </button>
+            <button class="btn-next">
+              <img width="18" src="./image/next.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>
