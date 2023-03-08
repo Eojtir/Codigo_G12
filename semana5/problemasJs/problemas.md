@@ -8,9 +8,9 @@ Escribe una función que reciba un número y devuelva el doble de ese número.
 
 Escribe una función que reciba un número y devuelva el triple de ese número.
 
-## Problema 3
+<!-- ## Problema 3
 
-Escribe una función que reciba un número y devuelva el cuadrado de ese número.
+Escribe una función que reciba un número y devuelva el cuadrado de ese número. -->
 
 ## Problema 4
 
