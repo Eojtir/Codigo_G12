@@ -95,6 +95,8 @@ function elevarAlCuadrado(num) {
 console.log( elevarAlCuadrado(9))
 
 
+const elevarCuadrado=(num) => num ** 2
+
 // function elevar(num, exponent) {
 //   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
 //   // Tu código:
@@ -131,6 +133,7 @@ return "es Negativo";
 }
 
 
+
 const resul= esPositivo(12.75);
 const resul2= esPositivo(-212.75);
 const resul3= esPositivo(0);
@@ -140,6 +143,17 @@ console.log(resul2);
 console.log(resul3);
 
 
+///////////////////mejorando funciones///////
+
+function isPositive(num) {
+  if(num === 0) return false
+return num>0 ? "Positivo" : "Negativo"  //operador ternario lleva este formato Condicion ? "si es true":"si es false"
+}
+
+console.log(isPositive(-3));
+console.log(isPositive(3));
+console.log(isPositive(0));
+////////////////////////////////////////
 
 function esVocal(letra) {
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
@@ -162,6 +176,31 @@ const resul03= esVocal("h");
 console.log(resul1);
 console.log(resul02);
 console.log(resul03);
+////////////////////////////optimizando /////////////////////
+function isVowel(letra) {
+  if(!letra || typeof letra !== "string") return "Dato incorrecto"
+
+  if(letra.length > 1) return "Maximo debe ser 1 caracter"
+
+  const vowels=["a","e","i","o","u"];
+
+  return vowels.includes(letra.toLowerCase()) ? "Es Vocal" : "No es Vocal" ;
+
+  
+}
+
+
+const aresul1= isVowel("A");
+const aresul02= isVowel("casa");
+const aresul03= isVowel("h");
+
+console.log(aresul1);
+console.log(aresul02);
+console.log(aresul03);
+
+////////////////////////////
+
+
 
 
 
