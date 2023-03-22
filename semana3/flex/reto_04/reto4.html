@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/eojtir/codigo-g12-css/base.css" />
+    <script src="./index.js" defer></script>
   </head>
   <body class="fontcolor">
     <main class="flex align-items-center">
@@ -20,14 +21,15 @@
         <div class="flex search align-items-center space-between padding10">
           <!-- buscador -->
           <img width="20" src="./images/search.png" alt="" />
-          <input class="border-none" type="text" placeholder="Search Github username..." />
-          <button class="border-none padding10">Search</button>
+          <input id="usuario" class="border-none" type="text" placeholder="Search Github username..." />
+          <button onclick="showInfo()" class="border-none padding10">Search</button>
         </div>
         <div class="flex result ">
           <!-- resultado de busqueda -->
           <div>
             <img
               class="avatar"
+              id="avatar"
               src="https://revistabyte.es/wp-content/uploads/2018/06/github-octocat.jpg"
               alt=""
             />
@@ -35,7 +37,7 @@
           <div class="profile">
             <div class="flex space-between space-between">
               <div>
-                <h3>The Octocat</h3>
+                <h3 id="name" >The Octocat</h3>
                 <p class="username">@octocat</p>
               </div>
               <div>
@@ -46,31 +48,31 @@
             <div class="flex stats padding10 margin-top-20">
               <div>
                 <h6 class="color-ccc">Repos</h6>
-                <p>8</p>
+                <p id="repos">8</p>
               </div>
               <div>
                 <h6 class="color-ccc">Followers</h6>
-                <p>3938</p>
+                <p id="follow">3938</p>
               </div>
               <div>
-                <h6 class="color-ccc">Following</h6>
-                <p>9</p>
+                <h6  class="color-ccc">Following</h6>
+                <p id="following">9</p>
               </div>
             </div>
             <div class="flex social space-between margin-top-20">
               <div>
                 <img width="15" src="./images/marker.png" alt="" />
-                <span>San Francisco</span>
+                <span id="state"  >San Francisco</span>
               </div>
               <div>
                 <img width="15" src="./images/twitter.png" alt="" />
-                <span>Not avaibable</span>
+                <span id="Twitter">Not avaibable</span>
               </div>
             </div>
             <div class="flex social">
               <div>
                 <img width="15" src="./images/link.png" alt="" />
-                <span>https://github.blog</span>
+                <span class="githut" >https://github.blog</span>
               </div>
               <div>
                 <img width="15" src="./images/building.png" alt="" />
